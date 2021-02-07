@@ -1,0 +1,414 @@
+@charset 'utf-8';
+@import url('common.css');
+
+html,body{}
+
+#portS{
+    width:100vw; height:100vh;
+    background:radial-gradient(#98837e ,#23212c);
+    position:relative;
+}
+#portS .backC{
+    width:100vw; height:100%;
+    background:#98837e;
+    transform: translateY(100%);
+    animation:backC .3s forwards;
+}
+#portS.active .backC{
+    width:100vw; height:100%;
+    background:#98837e;
+    transform: translateY(0);
+    animation:backCA .4s .3s forwards;
+}
+
+/*animation*/
+@keyframes backC{
+    100%{transform: translateY(0);}
+}
+@keyframes backCA{
+    100%{transform: translateY(100%);}
+}
+/*animation*/
+
+#portS .mCustomScrollbar{
+    width:100vw; height:100%;
+    overflow:hidden;
+}
+
+#portS .mCustomScrollbar .box{
+    width:80vw;
+    margin:0 auto;
+    overflow:hidden;
+    margin-top:100%;
+    opacity:0;
+    animation:scrollbox .5s .5s forwards;
+}
+
+#portS .mCustomScrollbar .box a{
+    cursor: none;
+}
+
+#portS.active .mCustomScrollbar .box{
+    width:80vw;
+    margin:0 auto;
+    overflow:hidden;
+    margin-top:10%;
+    opacity:1;
+    animation:scrollboxA .3s forwards;
+}
+
+/*animation*/
+@keyframes scrollbox{
+    100%{
+        margin-top:10%;
+        opacity:1;
+    }
+}
+@keyframes scrollboxA{
+    100%{
+        opacity:0;
+    }
+}
+/*animation*/
+
+#portS .mCSB_draggerContainer{
+    opacity:0;
+    animation:bar .5s 1s forwards;
+}
+#portS.active .mCSB_draggerContainer{
+    opacity:1;
+    animation:barA .3s forwards;
+}
+
+/*animation*/
+@keyframes bar{
+    100%{opacity:1;}
+}
+@keyframes barA{
+    100%{opacity:0;}
+}
+/*animation*/
+
+#portS .mCustomScrollbar .box figure{
+    width:40vw; height:40vw;
+    float:left;
+    position:relative;
+}
+#portS .mCustomScrollbar figure img{
+    width:100%;
+}
+
+#portS .mCustomScrollbar figure figcaption{
+    width:100%; height:100%;
+    position:absolute; top:0; left:0;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    transition:.3s;
+}
+#portS .mCustomScrollbar figure figcaption:hover{
+    opacity:1;
+}
+#portS .mCustomScrollbar figure figcaption strong{
+    font-size:2.5em;
+    color:#fff;
+    font-family:'Rajdhani';
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+#portS .mCustomScrollbar figure figcaption p{
+    font-size:1.3em;
+    color:#aaa;
+    text-align: center;
+}
+#portS .mCustomScrollbar figure figcaption svg{
+    width:35px;
+    margin-top:5%;
+}
+
+
+
+
+
+
+
+
+
+/*1024------------------------------------------------------------*/
+
+
+@media(max-width:1024px){
+    
+#portS{
+    width:100vw; height:100vh;
+    background:radial-gradient(#98837e ,#23212c);
+    position:relative;
+}
+
+#portS .mCustomScrollbar{
+    width:100vw; height:100%;
+    overflow:hidden;
+}
+
+#portS .mCustomScrollbar .box{
+    width:80vw;
+    margin:0 auto;
+    overflow:hidden;
+    margin-top:100%;
+}
+#portS.active .mCustomScrollbar .box{
+    width:80vw;
+    margin:0 auto;
+    overflow:hidden;
+    margin-top:13%;
+    opacity:1;
+    animation:scrollboxA .3s forwards;
+}
+
+/*animation*/
+@keyframes scrollbox{
+    100%{
+        margin-top:13%;
+        opacity:1;
+    }
+}
+@keyframes scrollboxA{
+    100%{
+        opacity:0;
+    }
+}
+/*animation*/
+
+#portS .mCustomScrollbar .box figure{
+    width:40vw; height:40vw;
+    float:left;
+    position:relative;
+}
+#portS .mCustomScrollbar figure img{
+    width:100%;
+}
+
+#portS .mCustomScrollbar figure figcaption{
+    width:100%; height:100%;
+    position:absolute; top:0; left:0;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    transition:.3s;
+}
+#portS .mCustomScrollbar figure figcaption:hover{
+    opacity:1;
+}
+#portS .mCustomScrollbar figure figcaption strong{
+    font-size:2.5em;
+    color:#fff;
+    font-family:'Rajdhani';
+    letter-spacing: 0.03em;
+}
+#portS .mCustomScrollbar figure figcaption p{
+    font-size:1.3em;
+    color:#aaa;
+}
+#portS .mCustomScrollbar figure figcaption svg{
+    width:35px;
+    margin-top:5%;
+}
+}
+
+/*------------------------------------------------------------1024*/
+
+
+
+
+
+
+
+/*768-------------------------------------------------------------*/
+
+@media(max-width:768px){
+    
+#portS{
+    width:100vw; height:100vh;
+    background:radial-gradient(#98837e ,#23212c);
+    position:relative;
+}
+
+#portS .mCustomScrollbar{
+    width:100vw; height:100%;
+    overflow:hidden;
+}
+
+#portS .mCustomScrollbar .box{
+    width:80vw;
+    margin:0 auto;
+    overflow:hidden;
+    margin-top:100%;
+}
+#portS.active .mCustomScrollbar .box{
+    width:80vw;
+    margin:0 auto;
+    overflow:hidden;
+    margin-top:18%;
+    opacity:1;
+    animation:scrollboxA .3s forwards;
+}
+
+/*animation*/
+@keyframes scrollbox{
+    100%{
+        margin-top:18%;
+        opacity:1;
+    }
+}
+@keyframes scrollboxA{
+    100%{
+        opacity:0;
+    }
+}
+/*animation*/
+
+#portS .mCustomScrollbar .box figure{
+    width:40vw; height:40vw;
+    float:left;
+    position:relative;
+}
+#portS .mCustomScrollbar figure img{
+    width:100%;
+}
+
+#portS .mCustomScrollbar figure figcaption{
+    width:100%; height:100%;
+    position:absolute; top:0; left:0;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    transition:.3s;
+}
+#portS .mCustomScrollbar figure figcaption:hover{
+    opacity:1;
+}
+#portS .mCustomScrollbar figure figcaption strong{
+    font-size:1.7em;
+    color:#fff;
+    font-family:'Rajdhani';
+    letter-spacing: 0.03em;
+}
+#portS .mCustomScrollbar figure figcaption p{
+    font-size:1.2em;
+    color:#aaa;
+}
+#portS .mCustomScrollbar figure figcaption svg{
+    width:30px;
+    margin-top:10%;
+}
+}
+/*-------------------------------------------------------------768*/
+
+
+
+
+
+
+
+
+
+
+/*480-------------------------------------------------------------*/
+
+@media(max-width:480px){
+
+#portS{
+    width:100vw; height:100vh;
+    background:radial-gradient(#98837e ,#23212c);
+    position:relative;
+}
+
+#portS .mCustomScrollbar{
+    width:100vw; height:100%;
+    overflow:auto;
+    position:relative; z-index: 1000000;
+}
+
+#portS .mCustomScrollbar .box{
+    width:80vw;
+    margin:0 auto;
+    overflow:hidden;
+    margin-top:100%;
+}
+#portS.active .mCustomScrollbar .box{
+    width:80vw;
+    margin:0 auto;
+    overflow:hidden;
+    margin-top:27%;
+    opacity:1;
+    animation:scrollboxA .3s forwards;
+}
+
+/*animation*/
+@keyframes scrollbox{
+    100%{
+        margin-top:27%;
+        opacity:1;
+    }
+}
+@keyframes scrollboxA{
+    100%{
+        opacity:0;
+    }
+}
+/*animation*/
+
+#portS .mCustomScrollbar .box figure{
+    width:80vw; height:80vw;
+    float:none;
+    position:relative;
+}
+#portS .mCustomScrollbar figure img{
+    width:100%;
+}
+
+#portS .mCustomScrollbar figure figcaption{
+    width:100%; height:50%;
+    position:absolute; top:50%; left:0;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity:1;
+    transition:.3s;
+}
+#portS .mCustomScrollbar figure figcaption:hover{
+    opacity:1;
+}
+#portS .mCustomScrollbar figure figcaption strong{
+    font-size:1.5em;
+    color:#fff;
+    font-family:'Rajdhani';
+    letter-spacing: 0.03em;
+}
+#portS .mCustomScrollbar figure figcaption p{
+    font-size:0.8em;
+    color:#aaa;
+}
+#portS .mCustomScrollbar figure figcaption svg{
+    width:20px;
+    margin-top:5%;
+}
+.mCSB_draggerContainer{
+    display:none;
+}
+}
+/*-------------------------------------------------------------480*/
+
+
+
